@@ -1,2 +1,2 @@
-#Práctica
+#Practica
 Esta es mi práctica
