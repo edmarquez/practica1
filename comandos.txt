@@ -1,0 +1,352 @@
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git commit
+
+Aborting commit due to empty commit message.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git add .
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git commit
+
+Aborting commit due to empty commit message.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ initial commit
+bash: initial: command not found
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ Initial commit
+bash: Initial: command not found
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git commit
+
+Aborting commit due to empty commit message.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ Initial commit
+bash: Initial: command not found
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git commit
+
+Aborting commit due to empty commit message.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   app.js
+        new file:   index.html
+
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git commit -m "primer commit"
+[master (root-commit) 4008fc0] primer commit
+ 2 files changed, 10 insertions(+)
+ create mode 100644 app.js
+ create mode 100644 index.html
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working                                     directory)
+
+        modified:   app.js
+
+no changes added to commit (use "git add" and/or "git commit -a"                                    )
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git add .
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git commit -m "cambio de archivo js"
+[master 01dc1c6] cambio de archivo js
+ 1 file changed, 1 insertion(+)
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ touch .gitignore
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ touch log.txt
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git add .
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ mkdir dir1
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ mkdir dir2
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git add .
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   dir1/app1.js
+
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git branch login
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   dir1/app1.js
+
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git commit -m "otro cambio"
+[master e709d46] otro cambio
+ 2 files changed, 3 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 dir1/app1.js
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git checkout login
+Switched to branch 'login'
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (login)
+$ touch login.html
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (login)
+$ git add .
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (login)
+$ git commit -m "login form"
+[login 85c185a] login form
+ 3 files changed, 13 insertions(+)
+ create mode 100644 dir2/app2.js
+ create mode 100644 log.txt
+ create mode 100644 login.html
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (login)
+$ git checkout master
+Switched to branch 'master'
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git merge login
+
+Merge made by the 'recursive' strategy.
+ dir2/app2.js |  1 +
+ log.txt      |  1 +
+ login.html   | 11 +++++++++++
+ 3 files changed, 13 insertions(+)
+ create mode 100644 dir2/app2.js
+ create mode 100644 log.txt
+ create mode 100644 login.html
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ added login
+bash: added: command not found
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote add origin git@github.com:edmarquez/practica1.git
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote
+origin
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git push -u origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote add origin git@github.com:edmarquez/practica1.git
+fatal: remote origin already exists.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote add origin git@github.com:edmarquez/practica1.git
+fatal: remote origin already exists.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote
+origin
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git push -u origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote show origin
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ ssh-keygen -t rsa -b 4096 -C "david.marquz@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Dav/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Dav/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Dav/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:/S52bs+DUgNV187Tv8LBj5sKvP3/v+Mnj60bU8KJh9c david.marquz@                                    gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|             .. o|
+|            .  ..|
+|           .   o.|
+|         ..  + ++|
+|        S ..+ * E|
+|        .  .o= o.|
+|         o .oo* .|
+|          B.+=+O.|
+|         o O==@X@|
++----[SHA256]-----+
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ eval $(ssh-agent -s)
+Agent pid 6264
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ ssh-add /c/Users/Dav/.ssh/id_rsa
+Enter passphrase for /c/Users/Dav/.ssh/id_rsa:
+Identity added: /c/Users/Dav/.ssh/id_rsa (/c/Users/Dav/.ssh/id_rsa)
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote
+origin
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git push -u origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote add origin git@github.com:edmarquez/practica1.git
+fatal: remote origin already exists.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote add origin git@github.com:edmarquez/practica1.git
+fatal: remote origin already exists.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ ls -al ~/.ssh
+total 28
+drwxr-xr-x 1 Dav 197121    0 jul.  8 11:08 ./
+drwxr-xr-x 1 Dav 197121    0 jul.  8 10:30 ../
+-rw-r--r-- 1 Dav 197121 3326 jul.  8 11:08 id_rsa
+-rw-r--r-- 1 Dav 197121  748 jul.  8 11:08 id_rsa.pub
+-rw-r--r-- 1 Dav 197121  803 jul.  8 11:13 known_hosts
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ ssh-add ~/.ssh/id_rsa
+Enter passphrase for /c/Users/Dav/.ssh/id_rsa:
+Identity added: /c/Users/Dav/.ssh/id_rsa (/c/Users/Dav/.ssh/id_rsa)
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git remote
+origin
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git push -u origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$ git push -u origin master
+Counting objects: 20, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (20/20), 1.51 KiB | 0 bytes/s, done.
+Total 20 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To github.com:edmarquez/practica1.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Dav@Caronte MINGW64 ~/Desktop/practica1 (master)
+$
